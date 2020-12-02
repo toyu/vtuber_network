@@ -3,7 +3,7 @@ from apiclient.discovery import build
 import pandas as pd
 
 members = pd.read_csv("data/hololiver_url.csv", encoding="utf_8", delimiter=',')
-YOUTUBE_API_KEY = 'AIzaSyCVuBaWnzQxvCNg27KAMyltDKX0ChB9UDE'
+YOUTUBE_API_KEY = 
 youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
 #
 # for member in members.iterrows():
