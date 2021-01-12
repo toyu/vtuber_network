@@ -6,6 +6,7 @@ members = pd.read_csv("data/hololiver_url.csv", encoding="utf_8")
 
 am = np.zeros((27, 27))
 
+# コラボ回数を重みとした隣接行列を作成
 for i, member in enumerate(members.iterrows()):
     with open('data/video/20200601_20200813_50/' + str(member[1]["id"]) + '.pkl', 'rb') as web:
         data = pickle.load(web)
